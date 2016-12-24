@@ -1,5 +1,9 @@
 # PhoenixStarter
 
+[![Build Status](https://semaphoreci.com/api/v1/summit360/phoenix_starter/branches/master/badge.svg)](https://semaphoreci.com/summit360/phoenix_starter)
+
+PhoenixStarter is by Colin of [Summit360](http://summit360.co.uk), a UK based independent software developer.
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
@@ -10,6 +14,14 @@ To start your Phoenix app:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+
+## Local Tests
+Default task in the framework is:
+```bash
+mix test
+```
+## Continuous Integration
+Semaphore CI offers good support and works pretty much out of the box.
 
 ## Learn more
 

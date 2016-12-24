@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :phoenix_starter, PhoenixStarter.Repo,
   adapter: Ecto.Adapters.MySQL,
-  username: "root",
-  password: "",
+  username: System.get_env("DATABASE_MYSQL_USERNAME") || "root",
+  password: System.get_env("DATABASE_MYSQL_PASSWORD") || "",
   database: "phoenix_starter_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
