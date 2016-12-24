@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Simple CI Script
+#
+# All tests for this application can be launched from here.
+#
+# Run before pushing to master.
+#
+
+mix test  || { 'Elixir TEST failed'; exit 1; }
+mix credo || { 'Elixir CREDO failed'; exit 1; }
